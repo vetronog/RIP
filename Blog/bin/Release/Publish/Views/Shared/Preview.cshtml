@@ -1,0 +1,13 @@
+﻿@model Blog.Models.Article
+
+<div class="recipe-container ">
+    <div class="row">
+        <img src="~/Images/salad.jpg" alt="salad" class="col-xs-12 col-md-4 thumbnail">
+        <div class="col-xs-12 col-md-7">
+            <div>
+                <h2><a href="@Url.Action("Article", "Articles", Model)">@Html.DisplayFor(model => model.Title)</a></h2>
+                <p>@Html.DisplayFor(model => model.Text)</p>
+            </div>
+        </div>
+    </div>
+</div>
